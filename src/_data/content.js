@@ -1,54 +1,186 @@
-const header = 'Welcome to this wonderful example timeline.';
-const footer = 'A footer goes here.';
+const header = 'All the games (and now consoles) that Jonathan has quit.';
+const footer = 'For The Gamers';
 const entries = [
   {
-    id: 'cat',
-    categories: ['cat'],
-    color: 'green',
-    faicon: 'cat',
-    datetime: '2021-01-01 05:00',
-    title: 'Cats are very good',
+    id: 'ps5',
+    title: 'Playstation 5',
+    categories: ['console'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2022-02-19',
     image: {
-      link: 'http://placekitten.com',
-      src: 'http://placekitten.com/200/300',
-      alt: 'A placeholder kitten',
-      caption: 'Kitten!',
+      src: 'https://i.redd.it/3slun89vjc451.png',
     },
-    body: "The best thing in the universe is a cardboard box. Chirp at birds catasstrophe for meowwww for hiding behind the couch until lured out by a feathery toy for morning beauty routine of licking self sugar, my siamese, stalks me (in a good way), day and night lick the other cats. Pushed the mug off the table shove bum in owner's face like camera lens or tickle my belly at your own peril i will pester for food when you're in the kitchen even if it's salad and grass smells good, licks your face, but hiiiiiiiiii feed me now.",
-    links: [
-      {
-        href: 'https://en.wikipedia.org/wiki/Cat',
-        linkText: 'Cat',
-      },
-    ],
+    body: "Yup, an entire console.",
   },
   {
-    id: 'dog',
-    categories: ['dog'],
-    color: 'green',
-    faicon: 'dog',
-    datetime: '2021-05-01 23:55',
-    title: 'Puppies are great too',
+    id: 'destiny 2',
+    title: 'Destiny 2',
+    categories: ['multiplayer'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2021-12-01',
     image: {
-      link: 'http://place-puppy.com',
-      src: 'https://place-puppy.com/300x300',
-      alt: 'A placeholder puppy',
-      caption: 'Puppy!',
+      src: 'https://www.mobygames.com/images/covers/l/433360-destiny-2-playstation-4-front-cover.jpg',
     },
-    body: 'Doggo ipsum sub woofer smol wow very biscit aqua doggo pupper dat tungg tho big ol pupper, very jealous pupper mlem heckin angery woofer very jealous pupper. Blep waggy wags long doggo, corgo. Tungg wow such tempt mlem very jealous pupper boofers lotsa pats, snoot smol big ol ruff doge super chub, long doggo heckin good boys and girls h*ck heck. Shoober blop many pats borkf, such treat. Big ol what a nice floof long water shoob wrinkler heck sub woofer, pupper porgo wow very biscit.',
-    links: [
-      {
-        href: 'https://en.wikipedia.org/wiki/Dog',
-        linkText: 'Dog',
-      },
-    ],
+    body: "Space AND Magic! This will be the MMO for him!",
+  },
+  {
+    id: 'eve online',
+    title: 'EVE Online',
+    categories: ['multiplayer'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2021-12-01',
+    image: {
+      src: 'https://www.mobygames.com/images/covers/l/171388-eve-online-special-edition-macintosh-front-cover.jpg',
+    },
+    body: "Space, the thing that will definitely get him into MMO's!",
+  },
+  {
+    id: 'Custom Built PC',
+    title: 'Custom Built PC',
+    categories: ['console'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2021-10-21',
+    image: {
+      src: 'https://tecsuggest.com/wp-content/uploads/2020/06/Best-Budget-Compact-Gaming-PC-Under-1000.jpg',
+    },
+    body: "Made with his friends, with love, and abandoned 😭 (downgraded to a gaming laptop)",
+  },
+  {
+    id: 'Witcher 3',
+    title: 'Witcher 3',
+    categories: ['single-player'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2021-09-01',
+    image: {
+      src: 'https://www.mobygames.com/images/covers/l/392214-the-witcher-3-wild-hunt-xbox-one-front-cover.png',
+    },
+    body: "Had a long run but I'm marking the grave here",
+  },
+  {
+    id: 'persona 5',
+    title: 'Persona 5',
+    categories: ['single-player'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2021-09-01',
+    image: {
+      src: 'https://i.imgur.com/uMvN6W3.jpg',
+    },
+    body: "A story-driven anime based game, full of anime tropes? No way he'd quit this one! /s",
+  },
+  {
+    id: 'battlefield five',
+    title: 'Battlefield 5',
+    categories: ['multiplayer'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2021-09-01',
+    image: {
+      src: 'https://www.mobygames.com/images/covers/l/523296-battlefield-v-deluxe-edition-xbox-one-front-cover.jpg',
+    },
+    body: "The end of Best Squad",
+  },
+  {
+    id: 'battlefield one',
+    title: 'Battlefield 1',
+    categories: ['multiplayer'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2021-09-01',
+    image: {
+      src: 'https://media.moddb.com/images/games/1/53/52060/Battlefield_1_Cover_Art.jpg',
+    },
+    body: "Because we wanted to play on more BF maps...",
+  },
+  {
+    id: 'knock out city',
+    title: 'Knockout City',
+    categories: ['multiplayer'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2021-06-01',
+    image: {
+      src: 'https://cdn2.unrealengine.com/egs-knockoutcity-velanstudios-s2-1200x1600-9f7f360701a8.jpg',
+    },
+    body: "It was so much fun that he just had to stop playing it.",
+  },
+  {
+    id: 'Elder Scrolls Online',
+    title: 'Elder Scrolls Online',
+    categories: ['multiplayer'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2020-12-01',
+    image: {
+      src: 'https://gamingtrend.com/wp-content/uploads/2014/05/ElderScrolls_hires9.jpg',
+      alt: 'Elder scrolls online cover art',
+    },
+    body: "Another death in the endless saga of Jonathan trying to find an MMO he likes.",
+  },
+  {
+    id: 'Assassins Creed Valhalla',
+    title: 'Assassins Creed Valhalla',
+    categories: ['single-player'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2021-12-01',
+    image: {
+      src: 'https://www.mobygames.com/images/covers/l/695955-assassin-s-creed-valhalla-xbox-one-front-cover.jpg',
+      alt: 'Assassins Creed cover art',
+    },
+    body: "To be fair, everyone is tired of this game's formula",
+  },
+  {
+    id: 'Monster Hunter',
+    title: 'Monster Hunter World',
+    categories: ['multiplayer'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2020-09-01',
+    image: {
+      src: 'https://www.mobygames.com/images/covers/l/452384-monster-hunter-world-digital-deluxe-edition-xbox-one-front-cover.jpg',
+      alt: 'Monster Hunter World cover art',
+    },
+    body: "You hunted monsters. What was there to dislike about this game?!?",
+  },
+  {
+    id: 'Maple Story',
+    title: 'Maple Story',
+    categories: ['multiplayer'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2020-01-01',
+    image: {
+      src: 'http://www.capsulecomputers.com.au/wp-content/uploads/2012/03/maplestory-logo.png',
+      alt: 'Maple story logo',
+      caption: '',
+    },
+    body: "He got tired of hunting down mushrooms.",
+  },
+  {
+    id: 'wow',
+    title: 'World of Warcraft',
+    categories: ['multiplayer'],
+    color: 'red',
+    faicon: 'gamepad',
+    datetime: '2019-10-01',
+    image: {
+      src: 'https://www.mobygames.com/images/covers/l/216725-world-of-warcraft-macintosh-front-cover.jpg',
+      alt: 'WOW Cover art',
+    },
+    body: "Even one of the greatest MMO's ever could not satisfy Jonathan!",
   },
 ];
 
 // Page details
-const pageTitle = 'Static timeline generator'; // The title of the page that shows in the browser tab
-const pageDescription = 'A super fancy timeline'; // The description of the page for search engines
-const pageAuthor = 'Jane Doe'; // Your name
+const pageTitle = 'How Long Since Jonathan Last Quit A Video Game (or console now)'; // The title of the page that shows in the browser tab
+const pageDescription = "Timeline of Jonathan's Video Game History"; // The description of the page for search engines
+const pageAuthor = 'TaySix'; // Your name
 
 // DON'T EDIT BELOW THIS LINE! --------------------------------------------------------------------
 const getFilters = (entries) => {
